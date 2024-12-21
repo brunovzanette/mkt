@@ -1,0 +1,74 @@
+Instruções de Instalação e Configuração
+
+Este é um projeto Python que requer a instalação de algumas bibliotecas para funcionar corretamente. Siga as instruções abaixo para configurar o ambiente e rodar o projeto.
+
+____________________________________________________________________________________________________________________________________________________________________________
+
+Passo 1: Criar e Ativar o Ambiente Virtual
+____________________________________________________________________________________________________________________________________________________________________________
+
+- Criar o ambiente virtual: Abra o terminal (ou prompt de comando no Windows) e navegue até o diretório onde você deseja criar o ambiente virtual. Execute o seguinte comando:
+
+python -m venv nome_do_ambiente
+
+Onde "nome_do_ambiente" é o nome que você deseja dar ao ambiente virtual (por exemplo, "env").
+
+- Ativar o ambiente virtual:
+
+No Windows, execute o comando: nome_do_ambiente\Scripts\activate
+
+No macOS/Linux, execute: source nome_do_ambiente/bin/activate
+
+- Após ativar, você verá o nome do ambiente virtual no início do prompt de comando.
+____________________________________________________________________________________________________________________________________________________________________________
+
+Passo 2: Instalar as Bibliotecas Necessárias
+____________________________________________________________________________________________________________________________________________________________________________
+- Com o ambiente virtual ativado, instale as bibliotecas necessárias executando os seguintes comandos:
+
+Instalar o pandas: pip install pandas
+
+Instalar o pywin32 (necessário para win32com.client no Windows): pip install pywin32
+
+Instalar o tkinter: O tkinter geralmente já vem com o Python. Se necessário, no Ubuntu/Debian, você pode instalar com: sudo apt-get install python3-tk
+
+Instalar o PyInstaller (para compilar o código em executável): pip install pyinstaller
+____________________________________________________________________________________________________________________________________________________________________________
+
+Passo 3: Compilar o Código com o PyInstaller
+____________________________________________________________________________________________________________________________________________________________________________
+
+- Após instalar o PyInstaller, você pode compilar o código Python em um executável. Para isso, execute o seguinte comando no terminal:
+
+pyinstaller --onefile nome_do_arquivo.py
+
+Onde "nome_do_arquivo.py" é o arquivo Python que você deseja compilar. O argumento --onefile faz com que o PyInstaller gere um único arquivo executável.
+
+
+____________________________________________________________________________________________________________________________________________________________________________
+
+Regras para o programa funcionar
+____________________________________________________________________________________________________________________________________________________________________________
+
+É necessário que o Outlook cliente esteja instalado e configurado no computador. O e-mail usado para o envio será o e-mail cadastrado lá. 
+
+A lista de envio é uma planilha chamada clientes.xlsx que deve ser preenchida com nome e-mail dos destinatários (os clientes) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
